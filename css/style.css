@@ -1,0 +1,953 @@
+:root {
+    --bs-primary: #6610f2;
+    --bs-primary-rgb: 102, 16, 242;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: transform .2s;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #5a0ee0;
+    border-color: #5a0ee0;
+}
+
+/* Common Section Styling */
+.section-title {
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--bs-primary);
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Active Nav Link */
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+/* Skills Page Styling */
+.skills-section {
+    background-color: #f9f7ff;
+}
+
+.skill-card {
+    padding: 1.5rem 0.5rem;
+}
+
+.skill-icon {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: rgba(102, 16, 242, 0.1);
+    margin-bottom: 1rem;
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badge {
+    margin: 0.3rem;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+}
+
+.skill-list {
+    text-align: left;
+    padding: 0 0.5rem;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-item .progress {
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.skill-item .progress-bar {
+    border-radius: 4px;
+}
+
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.soft-skill-item {
+    text-align: center;
+    width: 150px;
+}
+
+.soft-skill-item i {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: rgba(102, 16, 242, 0.1);
+    margin-bottom: 1rem;
+}
+
+.soft-skill-item p {
+    font-weight: 500;
+}
+
+.skill-meter {
+    margin-top: 1rem;
+}
+
+/* Projects Page Styling */
+.projects-section {
+    background-color: #f9f7ff;
+}
+
+.project-card {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 16, 242, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-link {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--bs-primary);
+    margin: 0 5px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.overlay-link:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.1);
+}
+
+.tech-stack {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech-stack .badge {
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    border-radius: 30px;
+    background-color: #f0ecff;
+    border: 1px solid rgba(102, 16, 242, 0.2);
+}
+
+/* Experience Page Styling */
+.experience-section {
+    background-color: #f9f7ff;
+}
+
+.timeline-area {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-area::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--bs-primary);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -50px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bs-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 1;
+    box-shadow: 0 0 0 5px rgba(102, 16, 242, 0.2);
+}
+
+.education-item .timeline-dot {
+    position: absolute;
+    left: -60px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bs-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 1;
+    box-shadow: 0 0 0 5px rgba(102, 16, 242, 0.2);
+}
+
+.timeline-date {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+.timeline-content {
+    position: relative;
+}
+
+.experience-card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.company-logo {
+    width: 100px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 20px;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.experience-details {
+    flex-grow: 1;
+    padding: 25px;
+}
+
+.position {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.company {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.company i {
+    color: var(--bs-primary);
+    margin-right: 5px;
+}
+
+.location {
+    color: #777;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.location i {
+    color: var(--bs-primary);
+}
+
+.responsibilities h6 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.responsibilities h6 i {
+    color: var(--bs-primary);
+    margin-right: 5px;
+}
+
+.responsibility-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.responsibility-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.responsibility-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(102, 16, 242, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--bs-primary);
+}
+
+.responsibility-text {
+    flex: 1;
+}
+
+.tech-used {
+    margin-top: 20px;
+}
+
+.tech-used h6 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.tech-used h6 i {
+    color: var(--bs-primary);
+    margin-right: 5px;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.timeline-start-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0ecff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+    margin-bottom: 10px;
+    border: 2px solid var(--bs-primary);
+}
+
+.timeline-start-label {
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+/* Contact Page Styling */
+.contact-section {
+    background-color: #f9f7ff;
+}
+
+.contact-info-card, .contact-form-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.contact-info-card:hover, .contact-form-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item {
+    padding: 10px 0;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(102, 16, 242, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: var(--bs-primary);
+    font-size: 1.2rem;
+}
+
+.contact-details h6 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-details p, .contact-details a {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.contact-details a:hover {
+    color: var(--bs-primary);
+}
+
+.social-connect {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(102, 16, 242, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-primary);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--bs-primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.form-control {
+    border: 1px solid rgba(102, 16, 242, 0.2);
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(102, 16, 242, 0.2);
+}
+
+.resume-download {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Education Page Styling */
+.education-section {
+    background-color: #f9f7ff;
+}
+
+.education-timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--bs-primary);
+}
+
+.education-item {
+    position: relative;
+    padding-bottom: 50px;
+    margin-left: 30px;
+}
+
+.education-item:last-child {
+    padding-bottom: 0;
+}
+
+.education-year {
+    position: relative;
+    display: inline-block;
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 3px 10px rgba(102, 16, 242, 0.3);
+    margin-bottom: 15px;
+}
+
+.education-content {
+    position: relative;
+}
+
+.education-card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-icon {
+    width: 80px;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-primary);
+    color: white;
+    font-size: 2rem;
+}
+
+.education-details {
+    flex-grow: 1;
+    padding: 25px;
+}
+
+.education-details h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-details h5 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.education-details h5 i {
+    margin-right: 8px;
+    color: var(--bs-primary);
+}
+
+.gpa-badge {
+    display: inline-block;
+    background-color: rgba(102, 16, 242, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: var(--bs-primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+    border: 1px solid rgba(102, 16, 242, 0.2);
+}
+
+.achievements-section, .courses-section {
+    margin-top: 20px;
+}
+
+.achievements-section h6, .courses-section h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.achievements-section h6 i, .courses-section h6 i {
+    color: var(--bs-primary);
+    margin-right: 8px;
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.achievements-list li i {
+    color: var(--bs-primary);
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.course-tag {
+    background-color: #f0ecff;
+    color: var(--bs-primary);
+    border: 1px solid rgba(102, 16, 242, 0.2);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+}
+
+/* Leadership Page Styling */
+.leadership-section {
+    background-color: #f9f7ff;
+}
+
+.leadership-grid {
+    margin-top: 20px;
+}
+
+.leadership-card {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    position: relative;
+}
+
+.leadership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(102, 16, 242, 0.15);
+}
+
+.leadership-icon {
+    width: 80px;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-primary);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.leadership-content {
+    flex-grow: 1;
+    padding: 25px;
+}
+
+.leadership-content h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.leadership-org {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.org-name {
+    font-weight: 500;
+    color: #555;
+}
+
+.org-year {
+    color: #888;
+    font-size: 0.9rem;
+    background-color: #f0ecff;
+    padding: 3px 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(102, 16, 242, 0.2);
+}
+
+.leadership-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.leadership-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.leadership-list li i {
+    color: var(--bs-primary);
+    min-width: 22px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+/* Certifications Page Styling */
+.certifications-section {
+    background-color: #f9f7ff;
+}
+
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.certification-card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(102, 16, 242, 0.15);
+}
+
+.certification-logo {
+    width: 90px;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-primary);
+    color: white;
+    font-size: 2.2rem;
+}
+
+.certification-content {
+    flex-grow: 1;
+    padding: 25px;
+    position: relative;
+}
+
+.certification-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.certification-provider, .certification-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.certification-provider i, .certification-date i {
+    color: var(--bs-primary);
+    margin-right: 8px;
+}
+
+.certification-provider {
+    color: #555;
+}
+
+.certification-date {
+    color: #777;
+}
+
+.certification-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--bs-primary);
+    font-size: 1.8rem;
+}
+
+/* Timeline End Styling for Education Page */
+.timeline-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-end-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0ecff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+    margin-bottom: 10px;
+    border: 2px solid var(--bs-primary);
+}
+
+.timeline-end-label {
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .education-year {
+        position: static;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    
+    .education-timeline {
+        padding-left: 0;
+    }
+    
+    .education-timeline::before {
+        left: 0;
+    }
+    
+    .timeline-dot {
+        left: -20px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .education-card, .leadership-card, .certification-card {
+        flex-direction: column;
+    }
+    
+    .education-icon, .leadership-icon, .certification-logo {
+        width: 100%;
+        height: 80px;
+    }
+    
+    .contact-info-card, .contact-form-card {
+        margin-bottom: 20px;
+    }
+}
