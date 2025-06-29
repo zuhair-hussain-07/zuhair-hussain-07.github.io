@@ -193,15 +193,17 @@
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-3 mb-md-0">
                                     <h5><i class="bi bi-diagram-2 me-2"></i>Work Process</h5>
-                                    <p>We began with researching student productivity needs, then sketched user flows and wireframes. I set up the Next.js project structure and worked on building reusable UI components with Tailwind and DaisyUI. On the backend, I integrated Google's Gemini AI API for test paper generation, developed a comprehensive GPA calculator, and built a community-driven Q&A system. We ran user tests and iterated based on feedback to refine each feature.</p>
+                                    <p>PolyGuru was born out of a shared goal between my friends and me to improve how students study and collaborate. We noticed that many of our peers were struggling to manage revision notes, and we set out to build a platform that integrates AI tools into a student-friendly workflow.</p>
+                                    <p>We worked together on the full-stack development of the app, starting with user research and brainstorming core features like note summarization, flashcard generation, and a Q&A feed.</p>
                                 </div>
                                 <div class="col-md-6">
                                     <h5><i class="bi bi-graph-up me-2"></i>Outcome & Results</h5>
+                                    <p>While still in early development, PolyGuru is already being used by a small group of close friends who find it helpful for organizing notes and preparing for tests more efficiently. Initial feedback has been positive, especially for the AI summarization tool.</p>
+                                    <p>In the future, the platform has the potential to:</p>
                                     <ul>
-                                        <li>Launched MVP to internal student testers with positive feedback</li>
-                                        <li>Test paper generation tool has created over 100+ custom test papers</li>
-                                        <li>GPA calculator has processed over 200+ grade calculations</li>
-                                        <li>Facilitated academic collaboration with over 50+ posts shared on the Q&A feed</li>
+                                        <li>Help students save their study time by automating note-taking and revision</li>
+                                        <li>Support a community of learners through collaborative Q&A and resource sharing</li>
+                                        <li>Scale to support hundreds of users with personalized productivity insights and AI-driven learning tools</li>
                                     </ul>
                                 </div>
                             </div>
@@ -260,21 +262,40 @@
                             <div class="row align-items-center mb-4 g-4">
                                 <div class="col-md-6 order-md-1 order-2">
                                     <h6 class="fw-bold mb-1">Event System</h6>
-                                    <p>Developed a full-featured event system for users to join and for admins to manage. Built CRUD tools for event creation, editing, and tracking user participation.</p>
+                                    <p>Developed a full-featured event system for users to join and for admins to manage. Built CRUD tools for event creation, editing, and tracking user participation. Integrated OpenWeather API to suggest eco-friendly activities based on current weather conditions, enhancing user engagement with dynamically tailored event recommendations.</p>
                                 </div>
                                 <div class="col-md-6 order-md-2 order-1">
                                     <!-- Carousel for Event System Visuals -->
                                     <div id="ecoprimers-event-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#ecoprimers-event-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#ecoprimers-event-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#ecoprimers-event-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
                                         <div class="carousel-inner">
-                                            <!-- Placeholder for Event System Screenshot -->
+                                            <!-- Event System Screenshots -->
                                             <div class="carousel-item active">
-                                                <!-- This is a placeholder for the event creation form screenshot -->
-                                                <div class="img-placeholder p-4 bg-light rounded text-center">
-                                                    <i class="bi bi-calendar-plus fs-2"></i>
-                                                    <p class="small mt-2 mb-0">Event Creation UI</p>
+                                                <img src="assets/event1.png" class="d-block w-100 rounded shadow" alt="Event System Interface 1">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Events Dashboard</h6>
+                                                    <p class="mb-0 small">Browse and sign up for eco-friendly events</p>
                                                 </div>
                                             </div>
-                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                            <div class="carousel-item">
+                                                <img src="assets/event2.png" class="d-block w-100 rounded shadow" alt="Event System Interface 2">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Event Details</h6>
+                                                    <p class="mb-0 small">Comprehensive event information</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/event3.png" class="d-block w-100 rounded shadow" alt="Event System Interface 3">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Event Management</h6>
+                                                    <p class="mb-0 small">Admin tools for event creation and tracking</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-event-carousel" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -292,21 +313,32 @@
                             <div class="row align-items-center mb-4 g-4 flex-md-row-reverse">
                                 <div class="col-md-6">
                                     <h6 class="fw-bold mb-1">Donation Flow</h6>
-                                    <p>Implemented a secure donation system using Stripe, allowing users to contribute to eco causes. Designed a simple and trustworthy donation interface.</p>
+                                    <p>Implemented a secure donation system using Stripe, allowing users to contribute to eco causes. Designed a simple and trustworthy donation interface with clear impact messaging and multiple payment options.</p>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Carousel for Donation Visuals -->
                                     <div id="ecoprimers-donation-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#ecoprimers-donation-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#ecoprimers-donation-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        </div>
                                         <div class="carousel-inner">
-                                            <!-- Placeholder for Donation UI Screenshot -->
+                                            <!-- Donation UI Screenshots -->
                                             <div class="carousel-item active">
-                                                <!-- This is a placeholder for the donation interface screenshot -->
-                                                <div class="img-placeholder p-4 bg-light rounded text-center">
-                                                    <i class="bi bi-credit-card fs-2"></i>
-                                                    <p class="small mt-2 mb-0">Donation UI</p>
+                                                <img src="assets/donate1.png" class="d-block w-100 rounded shadow" alt="Donation Interface 1">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Donation Selection</h6>
+                                                    <p class="mb-0 small">Choose donation amount and cause</p>
                                                 </div>
                                             </div>
-                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                            <div class="carousel-item">
+                                                <img src="assets/donate2.png" class="d-block w-100 rounded shadow" alt="Donation Interface 2">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Payment Processing</h6>
+                                                    <p class="mb-0 small">Secure Stripe payment integration</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-donation-carousel" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -320,31 +352,30 @@
                                 </div>
                             </div>
 
-                            <!-- Feature 3: Weather Activity Module -->
+                            <!-- Feature 3: Login and Authentication -->
                             <div class="row align-items-center mb-4 g-4">
                                 <div class="col-md-6 order-md-1 order-2">
-                                    <h6 class="fw-bold mb-1">Weather Activity Module</h6>
-                                    <p>Integrated OpenWeather API to recommend eco-friendly activities based on current weather. Enhanced user engagement with dynamic suggestions.</p>
+                                    <h6 class="fw-bold mb-1">Login and Authentication</h6>
+                                    <p>Implemented a comprehensive authentication system with multiple sign-in options including email/password and Google OAuth. Added secure session management, password recovery, and user profile functionality to ensure a seamless user experience.</p>
                                 </div>
                                 <div class="col-md-6 order-md-2 order-1">
-                                    <!-- Carousel for Weather Activity Visuals -->
-                                    <div id="ecoprimers-weather-carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Carousel for Login/Auth Visuals -->
+                                    <div id="ecoprimers-login-carousel" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
-                                            <!-- Placeholder for Weather Activity Screenshot -->
+                                            <!-- Login/Auth Screenshot -->
                                             <div class="carousel-item active">
-                                                <!-- This is a placeholder for the weather activity module screenshot -->
-                                                <div class="img-placeholder p-4 bg-light rounded text-center">
-                                                    <i class="bi bi-cloud-sun fs-2"></i>
-                                                    <p class="small mt-2 mb-0">Weather Activity Module</p>
+                                                <img src="assets/login1.png" class="d-block w-100 rounded shadow" alt="Authentication Interface">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Authentication System</h6>
+                                                    <p class="mb-0 small">Secure login with multiple options</p>
                                                 </div>
                                             </div>
-                                            <!-- Add more carousel-item divs for additional images if needed -->
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-weather-carousel" data-bs-slide="prev">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-login-carousel" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#ecoprimers-weather-carousel" data-bs-slide="next">
+                                        <button class="carousel-control-next" type="button" data-bs-target="#ecoprimers-login-carousel" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -356,14 +387,17 @@
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-3 mb-md-0">
                                     <h5><i class="bi bi-diagram-2 me-2"></i>Work Process</h5>
-                                    <p>I started by outlining the core user interactions—donating, joining events, and logging in. I then built out the routes and views in Flask, styled interfaces using Bootstrap, and tested Stripe/Google/OpenWeather integrations. Admin tools were built with CRUD operations for managing events and tracking user activity.</p>
+                                    <p>Eco Primers was developed by a team to promote sustainable habits through a user-friendly web platform. We started by identifying key features that could drive eco-action, such as event participation, donations, and weather-based suggestions.</p>
+                                    <p>I contributed to building the event system (for users and admins), donation flow, and authentication, including Google OAuth. The project followed a modular approach, allowing us to integrate features efficiently as a team.</p>
                                 </div>
                                 <div class="col-md-6">
                                     <h5><i class="bi bi-graph-up me-2"></i>Outcome & Results</h5>
+                                    <p>Eco Primers enables users to discover eco-events, donate to green causes, and receive personalized sustainability tips based on live weather.</p>
+                                    <p>Highlights include:</p>
                                     <ul>
-                                        <li>Enabled seamless donation and event sign-ups</li>
-                                        <li>Supported test donations exceeding $500</li>
-                                        <li>Created a functional admin dashboard to manage user engagement</li>
+                                        <li>Smooth event and donation workflows powered by Stripe and admin tools</li>
+                                        <li>Real-time weather-based activity suggestions</li>
+                                        <li>Strong potential to promote sustainable behavior through interactive tech</li>
                                     </ul>
                                 </div>
                             </div>
@@ -520,15 +554,11 @@
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-3 mb-md-0">
                                     <h5><i class="bi bi-diagram-2 me-2"></i>Work Process</h5>
-                                    <p>I began by mapping out game mechanics on paper, then wrote modular C# classes for Pokémon, items, and battle systems. I integrated Spectre.Console to enhance the UI and iterated based on user testing. The game structure allows future expansion with additional content.</p>
+                                    <p>Pokémon Pocket was a solo project inspired by classic turn-based games. I designed and implemented all core mechanics in C#, using Spectre.Console to build an interactive and visually styled console interface. The game features catching, battling, card collection, and trading—all within a smooth terminal experience.</p>
                                 </div>
                                 <div class="col-md-6">
                                     <h5><i class="bi bi-graph-up me-2"></i>Outcome & Results</h5>
-                                    <ul>
-                                        <li>Built a feature-complete prototype playable from the terminal</li>
-                                        <li>Created an engaging turn-based combat experience</li>
-                                        <li>Enhanced CLI UI/UX with animated menus and responsive prompts</li>
-                                    </ul>
+                                    <p>Completed a fully functional prototype with key gameplay systems. The project highlights my skills in C# and CLI game design. In the future, I plan to integrate it as a Discord mini-game, allowing friends and peers to play directly through Discord for a more social experience.</p>
                                 </div>
                             </div>
 
