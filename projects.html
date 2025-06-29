@@ -22,13 +22,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -39,97 +36,508 @@
     <section class="py-5 projects-section">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">Projects</h2>
-            <div class="row">
+            <div class="row gy-5">
                 <!-- Project 1: PolyGuru -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="project-card card h-100">
-                        <div class="project-image">
-                            <img src="assets/polyguru.png" class="card-img-top" alt="PolyGuru Project">
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <a href="https://polyguru.xyz/" class="overlay-link"><i class="bi bi-link-45deg"></i></a>
-                                    <a href="https://github.com/dentolos19/polyguru" class="overlay-link"><i class="bi bi-github"></i></a>
+                <div class="col-lg-12 mb-4">
+                    <div class="project-card card">
+                        <div class="card-body p-4">
+                            <!-- Summary Row -->
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-1">POLYGURU</h3>
+                                    <div class="d-flex flex-wrap gap-3 mb-2">
+                                        <span><strong><i class="bi bi-person-workspace me-1"></i>Role:</strong> Full-Stack Developer</span>
+                                        <span><strong><i class="bi bi-calendar-event me-1"></i>Duration:</strong> 2024 – Present</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong><i class="bi bi-tools me-1"></i>Tech Stack:</strong>
+                                        <span class="badge bg-light text-primary m-1">Next.js</span>
+                                        <span class="badge bg-light text-primary m-1">TailwindCSS (DaisyUI)</span>
+                                        <span class="badge bg-light text-primary m-1">Prisma ORM</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong><i class="bi bi-info-circle me-1"></i>Summary:</strong> Polyguru is a productivity platform designed to empower students through Generative AI tools. It offers features like test paper generation using Gemini AI, a comprehensive GPA calculator, and a collaborative Q&A feed to enhance learning efficiency.
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                                    <!-- Project Logo -->
+                                    <div class="project-logo-container">
+                                        <img src="assets/polyguru.png" class="project-logo img-fluid rounded shadow" alt="PolyGuru Logo">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">PolyGuru</h5>
-                            <h6 class="text-muted mb-3">Student Productivity Platform</h6>
-                            <p class="card-text">Built a full-stack platform to enhance student productivity using Generative AI tools and collaborative features. Developed AI-powered tools for note summarization, practice paper generation, and flashcard creation.</p>
-                            <div class="tech-stack">
-                                <span class="badge bg-light text-primary m-1">Next.js</span>
-                                <span class="badge bg-light text-primary m-1">TailwindCSS</span>
-                                <span class="badge bg-light text-primary m-1">Prisma ORM</span>
+
+                            <!-- My Role Section -->
+                            <div class="mb-4">
+                                <h5 class="fw-semibold mb-2"><i class="bi bi-person-badge me-2"></i>My Role & Key Features Developed</h5>
+                                <p>I served as a full-stack developer, working alongside a teammate. I designed and implemented both frontend and backend logic for the Test Paper Generation tool using Gemini AI, developed the GPA Calculator, and built the community Q&A feed. I also handled Prisma ORM for database access, integrated the AI components, and created a clean and responsive UI with TailwindCSS and DaisyUI.</p>
                             </div>
+
+                            <!-- Feature 1: Test Paper Generation -->
+                            <div class="row align-items-center mb-4 g-4">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <h6 class="fw-bold mb-1">Test Paper Generation using Gemini AI</h6>
+                                    <p>Developed an AI-powered tool that generates customized test papers for students based on their learning materials. Integrated with Google's Gemini AI for intelligent question creation and built a user-friendly interface for test customization.</p>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <!-- Carousel for Test Paper Generation Visuals -->
+                                    <div id="polyguru-test-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#polyguru-test-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#polyguru-test-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#polyguru-test-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <!-- Test Paper Generation Screenshots -->
+                                            <div class="carousel-item active">
+                                                <img src="assets/test1.png" class="d-block w-100 rounded shadow" alt="Test Paper Generation Example 1">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Selecting a test</h6>
+                                                    <p class="mb-0 small">AI-generated questions based on learning materials</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/test2.png" class="d-block w-100 rounded shadow" alt="Test Paper Generation Example 2">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Test View</h6>
+                                                    <p class="mb-0 small">Auto marked test with feedback</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#polyguru-test-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#polyguru-test-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2: GPA Calculator -->
+                            <div class="row align-items-center mb-4 g-4 flex-md-row-reverse">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold mb-1">GPA Calculator</h6>
+                                    <p>Developed an intuitive GPA calculator tailored for polytechnic students. The tool allows users to input their grades and credit units to calculate both semester and cumulative GPAs, with an option to save and track progress over time.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Carousel for GPA Calculator Visuals -->
+                                    <div id="polyguru-gpa-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#polyguru-gpa-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#polyguru-gpa-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#polyguru-gpa-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <!-- GPA Calculator Screenshots -->
+                                            <div class="carousel-item active">
+                                                <img src="assets/GPA1.png" class="d-block w-100 rounded shadow" alt="GPA Calculator Input Screen">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Cumulative Grade Overview</h6>
+                                                    <p class="mb-0 small">Overall summary of grades</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/GPA2.png" class="d-block w-100 rounded shadow" alt="GPA Calculator Results">
+                                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                    <h6 class="mb-1">Semester Analysis</h6>
+                                                    <p class="mb-0 small">Detailed breakdown of GPA calculation with visual indicators</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#polyguru-gpa-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#polyguru-gpa-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3: Collaborative Q&A Feed -->
+                            <div class="row align-items-center mb-4 g-4">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <h6 class="fw-bold mb-1">Collaborative Q&A Feed</h6>
+                                    <p>Implemented a real-time Q&A feed where students can post questions and answers, fostering academic collaboration. Built moderation tools and notification system for a seamless community experience.</p>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <!-- Carousel for Q&A Feed Visuals -->
+                                    <div id="polyguru-qa-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Q&A Feed Screenshot -->
+                                            <div class="carousel-item active">
+                                                <img src="assets/community.png" class="d-block w-100 rounded shadow" alt="Q&A Community Feed">
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#polyguru-qa-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#polyguru-qa-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Work Process & Outcome -->
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <h5><i class="bi bi-diagram-2 me-2"></i>Work Process</h5>
+                                    <p>We began with researching student productivity needs, then sketched user flows and wireframes. I set up the Next.js project structure and worked on building reusable UI components with Tailwind and DaisyUI. On the backend, I integrated Google's Gemini AI API for test paper generation, developed a comprehensive GPA calculator, and built a community-driven Q&A system. We ran user tests and iterated based on feedback to refine each feature.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-graph-up me-2"></i>Outcome & Results</h5>
+                                    <ul>
+                                        <li>Launched MVP to internal student testers with positive feedback</li>
+                                        <li>Test paper generation tool has created over 100+ custom test papers</li>
+                                        <li>GPA calculator has processed over 200+ grade calculations</li>
+                                        <li>Facilitated academic collaboration with over 50+ posts shared on the Q&A feed</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Project Links -->
                             <div class="project-links mt-4">
-                                <a href="https://polyguru.xyz/" class="btn btn-primary btn-sm me-2">
+                                <a href="https://polyguru.xyz/" class="btn btn-primary me-2">
                                     <i class="bi bi-eye me-1"></i> View Project
                                 </a>
-                                <a href="https://github.com/dentolos19/polyguru" class="btn btn-outline-dark btn-sm">
+                                <a href="https://github.com/dentolos19/polyguru" class="btn btn-outline-dark">
                                     <i class="bi bi-github me-1"></i> View Code
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <!-- Project 2: EcoPrimers -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="project-card card h-100">
-                        <div class="project-image">
-                            <img src="assets/ecoprimers.png" class="card-img-top" alt="EcoPrimers Project">
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <a href="https://ecoprimers.fly.dev/" class="overlay-link"><i class="bi bi-link-45deg"></i></a>
-                                    <a href="https://github.com/dentolos19/ecoprimers" class="overlay-link"><i class="bi bi-github"></i></a>
+                <div class="col-lg-12 mb-4">
+                    <div class="project-card card">
+                        <div class="card-body p-4">
+                            <!-- Summary Row -->
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-1">ECO PRIMERS</h3>
+                                    <div class="d-flex flex-wrap gap-3 mb-2">
+                                        <span><strong><i class="bi bi-person-workspace me-1"></i>Role:</strong> Full-Stack Developer</span>
+                                        <span><strong><i class="bi bi-calendar-event me-1"></i>Duration:</strong> 2024 – Present</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong><i class="bi bi-tools me-1"></i>Tech Stack:</strong>
+                                        <span class="badge bg-light text-primary m-1">Flask</span>
+                                        <span class="badge bg-light text-primary m-1">SQLite</span>
+                                        <span class="badge bg-light text-primary m-1">JavaScript</span>
+                                        <span class="badge bg-light text-primary m-1">Bootstrap</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong><i class="bi bi-info-circle me-1"></i>Summary:</strong> Eco Primers is an interactive platform aimed at promoting eco-friendly habits through events, donations, and weather-based activity recommendations. It blends education and action to encourage sustainable living.
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                                    <!-- Project Logo -->
+                                    <div class="project-logo-container">
+                                        <img src="assets/ecoprimers.png" class="project-logo img-fluid rounded shadow" alt="EcoPrimers Logo">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">EcoPrimers</h5>
-                            <h6 class="text-muted mb-3">Environmental Education Platform</h6>
-                            <p class="card-text">An environmental awareness platform focused on sustainability education, providing interactive lessons and community engagement features for eco-conscious individuals.</p>
-                            <div class="tech-stack">
-                                <span class="badge bg-light text-primary m-1">Flask</span>
-                                <span class="badge bg-light text-primary m-1">Jinja</span>
-                                <span class="badge bg-light text-primary m-1">Python</span>
+
+                            <!-- My Role Section -->
+                            <div class="mb-4">
+                                <h5 class="fw-semibold mb-2"><i class="bi bi-person-badge me-2"></i>My Role & Key Features Developed</h5>
+                                <p>I developed the home page, user authentication (including Google OAuth), donation flow with Stripe, and the full event system for both customers and admins. I also handled integration with third-party APIs and ensured a smooth backend-to-frontend flow.</p>
                             </div>
+
+                            <!-- Feature 1: Event System -->
+                            <div class="row align-items-center mb-4 g-4">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <h6 class="fw-bold mb-1">Event System</h6>
+                                    <p>Developed a full-featured event system for users to join and for admins to manage. Built CRUD tools for event creation, editing, and tracking user participation.</p>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <!-- Carousel for Event System Visuals -->
+                                    <div id="ecoprimers-event-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Placeholder for Event System Screenshot -->
+                                            <div class="carousel-item active">
+                                                <!-- This is a placeholder for the event creation form screenshot -->
+                                                <div class="img-placeholder p-4 bg-light rounded text-center">
+                                                    <i class="bi bi-calendar-plus fs-2"></i>
+                                                    <p class="small mt-2 mb-0">Event Creation UI</p>
+                                                </div>
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-event-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#ecoprimers-event-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2: Donation Flow -->
+                            <div class="row align-items-center mb-4 g-4 flex-md-row-reverse">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold mb-1">Donation Flow</h6>
+                                    <p>Implemented a secure donation system using Stripe, allowing users to contribute to eco causes. Designed a simple and trustworthy donation interface.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Carousel for Donation Visuals -->
+                                    <div id="ecoprimers-donation-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Placeholder for Donation UI Screenshot -->
+                                            <div class="carousel-item active">
+                                                <!-- This is a placeholder for the donation interface screenshot -->
+                                                <div class="img-placeholder p-4 bg-light rounded text-center">
+                                                    <i class="bi bi-credit-card fs-2"></i>
+                                                    <p class="small mt-2 mb-0">Donation UI</p>
+                                                </div>
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-donation-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#ecoprimers-donation-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3: Weather Activity Module -->
+                            <div class="row align-items-center mb-4 g-4">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <h6 class="fw-bold mb-1">Weather Activity Module</h6>
+                                    <p>Integrated OpenWeather API to recommend eco-friendly activities based on current weather. Enhanced user engagement with dynamic suggestions.</p>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <!-- Carousel for Weather Activity Visuals -->
+                                    <div id="ecoprimers-weather-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Placeholder for Weather Activity Screenshot -->
+                                            <div class="carousel-item active">
+                                                <!-- This is a placeholder for the weather activity module screenshot -->
+                                                <div class="img-placeholder p-4 bg-light rounded text-center">
+                                                    <i class="bi bi-cloud-sun fs-2"></i>
+                                                    <p class="small mt-2 mb-0">Weather Activity Module</p>
+                                                </div>
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#ecoprimers-weather-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#ecoprimers-weather-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Work Process & Outcome -->
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <h5><i class="bi bi-diagram-2 me-2"></i>Work Process</h5>
+                                    <p>I started by outlining the core user interactions—donating, joining events, and logging in. I then built out the routes and views in Flask, styled interfaces using Bootstrap, and tested Stripe/Google/OpenWeather integrations. Admin tools were built with CRUD operations for managing events and tracking user activity.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-graph-up me-2"></i>Outcome & Results</h5>
+                                    <ul>
+                                        <li>Enabled seamless donation and event sign-ups</li>
+                                        <li>Supported test donations exceeding $500</li>
+                                        <li>Created a functional admin dashboard to manage user engagement</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Project Links -->
                             <div class="project-links mt-4">
-                                <a href="https://ecoprimers.fly.dev/" class="btn btn-primary btn-sm me-2">
+                                <a href="https://ecoprimers.fly.dev/" class="btn btn-primary me-2">
                                     <i class="bi bi-eye me-1"></i> View Project
                                 </a>
-                                <a href="https://github.com/dentolos19/ecoprimers" class="btn btn-outline-dark btn-sm">
+                                <a href="https://github.com/dentolos19/ecoprimers" class="btn btn-outline-dark">
                                     <i class="bi bi-github me-1"></i> View Code
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project 3: Initiate -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="project-card card h-100">
-                        <div class="project-image">
-                            <img src="assets/initiate.png" class="card-img-top" alt="Initiate Project">
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <a href="https://initiate.global/" class="overlay-link"><i class="bi bi-link-45deg"></i></a>
-                                    <a href="https://github.com/initiatex" class="overlay-link"><i class="bi bi-github"></i></a>
+
+                <!-- Project 3: Pokemon Pocket -->
+                <div class="col-lg-12 mb-4">
+                    <div class="project-card card">
+                        <div class="card-body p-4">
+                            <!-- Summary Row -->
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-1">POKEMON POCKET</h3>
+                                    <div class="d-flex flex-wrap gap-3 mb-2">
+                                        <span><strong><i class="bi bi-person-workspace me-1"></i>Role:</strong> Game Developer</span>
+                                        <span><strong><i class="bi bi-calendar-event me-1"></i>Duration:</strong> 2025 – Present</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong><i class="bi bi-tools me-1"></i>Tech Stack:</strong>
+                                        <span class="badge bg-light text-primary m-1">C#</span>
+                                        <span class="badge bg-light text-primary m-1">Spectre.Console</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <strong><i class="bi bi-info-circle me-1"></i>Summary:</strong> Pokémon Pocket is a console-based fan game that recreates Pokémon battles, card pack collecting, and trading in a fully interactive text UI. It delivers nostalgic gameplay through a modern terminal experience.
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                                    <!-- Project Logo -->
+                                    <div class="project-logo-container">
+                                        <!-- This is a placeholder for the Pokemon Pocket logo -->
+                                        <div class="img-placeholder rounded text-center shadow">
+                                            <i class="bi bi-controller fs-1"></i>
+                                            <p class="mt-3 mb-0">Game Logo</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Initiate</h5>
-                            <h6 class="text-muted mb-3">Startup Platform</h6>
-                            <p class="card-text">A platform supporting AI-powered digital solutions and community features for startups. Features include a community forum, user profiles, and a marketplace for digital products.</p>
-                            <div class="tech-stack">
-                                <span class="badge bg-light text-primary m-1">Next.js</span>
-                                <span class="badge bg-light text-primary m-1">Hono.js</span>
-                                <span class="badge bg-light text-primary m-1">PostgreSQL</span>
+
+                            <!-- My Role Section -->
+                            <div class="mb-4">
+                                <h5 class="fw-semibold mb-2"><i class="bi bi-person-badge me-2"></i>My Role & Key Features Developed</h5>
+                                <p>I designed and implemented all gameplay mechanics from scratch, including turn-based battle logic, card collection, and trading. I used Spectre.Console to create a visually appealing and interactive interface, adding animations and color-styled menus.</p>
                             </div>
+
+                            <!-- Feature 1: Turn-Based Battle System -->
+                            <div class="row align-items-center mb-4 g-4">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <h6 class="fw-bold mb-1">Turn-Based Battle System</h6>
+                                    <p>Designed and coded the core battle mechanics, including move selection, health tracking, and win/loss logic. Added animations and color feedback for a more engaging CLI experience.</p>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <!-- Carousel for Battle System Visuals -->
+                                    <div id="pokemon-battle-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Placeholder for Battle UI Screenshot -->
+                                            <div class="carousel-item active">
+                                                <!-- This is a placeholder for the battle UI screenshot -->
+                                                <div class="img-placeholder p-4 bg-light rounded text-center">
+                                                    <i class="bi bi-lightning fs-2"></i>
+                                                    <p class="small mt-2 mb-0">Battle UI</p>
+                                                </div>
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#pokemon-battle-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#pokemon-battle-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2: Card Pack Collecting -->
+                            <div class="row align-items-center mb-4 g-4 flex-md-row-reverse">
+                                <div class="col-md-6">
+                                    <h6 class="fw-bold mb-1">Card Pack Collecting</h6>
+                                    <p>Implemented a card pack opening system with randomization, collection tracking, and rarity levels. Created a visually engaging CLI animation for pack openings.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Carousel for Card Pack Visuals -->
+                                    <div id="pokemon-cardpack-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Placeholder for Card Pack Opening Screenshot -->
+                                            <div class="carousel-item active">
+                                                <!-- This is a placeholder for the card pack opening screenshot -->
+                                                <div class="img-placeholder p-4 bg-light rounded text-center">
+                                                    <i class="bi bi-collection fs-2"></i>
+                                                    <p class="small mt-2 mb-0">Card Pack Opening</p>
+                                                </div>
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#pokemon-cardpack-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#pokemon-cardpack-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3: Trading System -->
+                            <div class="row align-items-center mb-4 g-4">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <h6 class="fw-bold mb-1">Trading System</h6>
+                                    <p>Developed a trading system for players to exchange cards, with validation and feedback. Ensured a smooth and interactive CLI workflow for trades.</p>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <!-- Carousel for Trading Visuals -->
+                                    <div id="pokemon-trading-carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Placeholder for Trading Screenshot -->
+                                            <div class="carousel-item active">
+                                                <!-- This is a placeholder for the trading system screenshot -->
+                                                <div class="img-placeholder p-4 bg-light rounded text-center">
+                                                    <i class="bi bi-arrow-left-right fs-2"></i>
+                                                    <p class="small mt-2 mb-0">Trading UI</p>
+                                                </div>
+                                            </div>
+                                            <!-- Add more carousel-item divs for additional images if needed -->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#pokemon-trading-carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#pokemon-trading-carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Work Process & Outcome -->
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <h5><i class="bi bi-diagram-2 me-2"></i>Work Process</h5>
+                                    <p>I began by mapping out game mechanics on paper, then wrote modular C# classes for Pokémon, items, and battle systems. I integrated Spectre.Console to enhance the UI and iterated based on user testing. The game structure allows future expansion with additional content.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-graph-up me-2"></i>Outcome & Results</h5>
+                                    <ul>
+                                        <li>Built a feature-complete prototype playable from the terminal</li>
+                                        <li>Created an engaging turn-based combat experience</li>
+                                        <li>Enhanced CLI UI/UX with animated menus and responsive prompts</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Project Links -->
                             <div class="project-links mt-4">
-                                <a href="https://initiate.global/" class="btn btn-primary btn-sm me-2">
+                                <a href="#" class="btn btn-primary me-2">
                                     <i class="bi bi-eye me-1"></i> View Project
                                 </a>
-                                <a href="https://github.com/initiatex" class="btn btn-outline-dark btn-sm">
+                                <a href="#" class="btn btn-outline-dark">
                                     <i class="bi bi-github me-1"></i> View Code
                                 </a>
                             </div>
