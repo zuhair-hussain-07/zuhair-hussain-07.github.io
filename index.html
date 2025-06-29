@@ -14,7 +14,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="index.html">ZH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,226 +33,83 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-md-6 text-md-start text-center">
-                    <h1 class="display-4">Mohammed Zuhair Hussain</h1>
-                    <p class="lead">Software Engineer</p>
-                    <p class="mt-4">
-                        Passionate and driven software engineer with a strong foundation in full-stack development and a 3.91 GPA in Information Technology at Nanyang Polytechnic. With a background in leadership, startup development, and project-based learning, I am deeply interested in how technology can solve real-world problems. I enjoy building scalable web applications, integrating APIs, and exploring the use of AI to enhance user experiences.
-                    </p>
-                </div>
-                <div class="col-lg-5 col-md-6 text-center mt-4 mt-md-0">
-                    <img src="assets/pfp.png" class="img-fluid rounded-circle shadow-lg" alt="Mohammed Zuhair Hussain">
-                    <div class="social-links mt-4">
-                        <a href="mailto:zuhair.hussain.sg@gmail.com" class="btn btn-outline-dark btn-lg mx-2"><i class="bi bi-envelope-fill"></i> Email</a>
-                        <a href="https://github.com/zuhair-hussain-07" class="btn btn-outline-dark btn-lg mx-2"><i class="bi bi-github"></i> GitHub</a>
-                        <a href="https://www.linkedin.com/in/mohammed-zuhair-hussain-689606350/" class="btn btn-outline-dark btn-lg mx-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                    </div>
-                    <a href="assets/Resume.pdf" class="btn btn-primary btn-lg mt-4"><i class="bi bi-download"></i> Download Resume</a>
-                </div>
+    <header class="project-hero text-white text-center" id="home-hero" style="background-image: url('assets/techgraphic.jpeg'); background-size: cover; background-position: center;">
+        <div class="project-hero-overlay" style="background-color: rgba(0,0,0,0.6);"></div>
+        <div class="container position-relative" style="z-index: 2;">
+            <img src="assets/pfp.png" class="img-fluid rounded-circle shadow-lg mb-4" alt="Mohammed Zuhair Hussain" style="width: 150px; height: 150px; object-fit: cover;">
+            <h1 class="display-4 fw-bold">Mohammed Zuhair Hussain</h1>
+            <p class="lead">Software Engineer & Full-Stack Developer</p>
+            <p class="mt-4 col-lg-8 mx-auto">
+                Passionate and driven software engineer with a strong foundation in full-stack development and a 3.91 GPA in Information Technology at Nanyang Polytechnic. With a background in leadership, startup development, and project-based learning, I am deeply interested in how technology can solve real-world problems. I enjoy building scalable web applications, integrating APIs, and exploring the use of AI to enhance user experiences.
+            </p>
+            <div class="social-links mt-4">
+                <a href="mailto:zuhair.hussain.sg@gmail.com" class="btn btn-outline-light btn-lg mx-2" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://github.com/zuhair-hussain-07" class="btn btn-outline-light btn-lg mx-2" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-zuhair-hussain-689606350/" class="btn btn-outline-light btn-lg mx-2" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
+            <a href="assets/Resume.pdf" class="btn btn-primary btn-lg mt-4"><i class="bi bi-download me-2"></i> Download Resume</a>
         </div>
     </header>
 
     <!-- Skills Section -->
-    <section class="py-5 skills-section">
+    <section class="py-5 skills-section bg-light">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">Technical Skills</h2>
-            <div class="row">
+            <div class="row text-center">
+                <!-- Programming Languages -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100 skill-card">
-                        <div class="card-body text-center">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
                             <div class="skill-icon mb-3">
                                 <i class="bi bi-code-slash fs-1 text-primary"></i>
                             </div>
                             <h5 class="card-title fw-bold">Programming Languages</h5>
-                            <div class="card-text skill-list">
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>Python</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>JavaScript/TypeScript</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>C#</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>R</span>
-                                        <span class="text-muted small">Intermediate</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>SQL</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+                            <div class="skill-badges mt-3">
+                                <span class="badge bg-primary m-1">Python</span>
+                                <span class="badge bg-primary m-1">JavaScript</span>
+                                <span class="badge bg-primary m-1">TypeScript</span>
+                                <span class="badge bg-primary m-1">C#</span>
+                                <span class="badge bg-primary m-1">HTML/CSS</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Frameworks & Libraries -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100 skill-card">
-                        <div class="card-body text-center">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
                             <div class="skill-icon mb-3">
-                                <i class="bi bi-window fs-1 text-primary"></i>
+                                <i class="bi bi-collection-fill fs-1 text-primary"></i>
                             </div>
-                            <h5 class="card-title fw-bold">Web Development</h5>
-                            <div class="card-text skill-list">
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>React.Js (Next.js)</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>Node.Js</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>.NET</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>CSS (TailwindCSS, Bootstrap)</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+                            <h5 class="card-title fw-bold">Frameworks & Libraries</h5>
+                            <div class="skill-badges mt-3">
+                                <span class="badge bg-primary m-1">Next.js</span>
+                                <span class="badge bg-primary m-1">React</span>
+                                <span class="badge bg-primary m-1">Flask</span>
+                                <span class="badge bg-primary m-1">Hono.js</span>
+                                <span class="badge bg-primary m-1">TailwindCSS</span>
+                                <span class="badge bg-primary m-1">Bootstrap</span>
+                                <span class="badge bg-primary m-1">Prisma ORM</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Tools & Platforms -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100 skill-card">
-                        <div class="card-body text-center">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
                             <div class="skill-icon mb-3">
                                 <i class="bi bi-tools fs-1 text-primary"></i>
                             </div>
-                            <h5 class="card-title fw-bold">Databases & Tools</h5>
-                            <div class="card-text skill-list">
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>PostgreSQL</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>MySQL</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>Git / GitHub</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill-item my-3">
-                                    <div class="d-flex justify-content-between">
-                                        <span>Figma / UI Design</span>
-                                        <span class="text-muted small">Advanced</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+                            <h5 class="card-title fw-bold">Tools & Platforms</h5>
+                            <div class="skill-badges mt-3">
+                                <span class="badge bg-primary m-1">Git & GitHub</span>
+                                <span class="badge bg-primary m-1">Docker</span>
+                                <span class="badge bg-primary m-1">PostgreSQL</span>
+                                <span class="badge bg-primary m-1">SQLite</span>
+                                <span class="badge bg-primary m-1">AWS</span>
+                                <span class="badge bg-primary m-1">Vercel</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <h3 class="mb-4">Soft Skills</h3>
-                    <div class="soft-skills-container">
-                        <div class="soft-skill-item">
-                            <i class="bi bi-lightbulb fs-3 text-primary"></i>
-                            <p>Critical Thinking</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <i class="bi bi-puzzle fs-3 text-primary"></i>
-                            <p>Problem Solving</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <i class="bi bi-people fs-3 text-primary"></i>
-                            <p>Teamwork</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <i class="bi bi-arrows-angle-expand fs-3 text-primary"></i>
-                            <p>Adaptability</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <i class="bi bi-chat-square-text fs-3 text-primary"></i>
-                            <p>Collaboration</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <i class="bi bi-heart fs-3 text-primary"></i>
-                            <p>Empathy</p>
                         </div>
                     </div>
                 </div>

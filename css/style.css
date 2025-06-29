@@ -99,128 +99,54 @@ body {
     padding: 0.5rem 1rem;
 }
 
-.skill-list {
-    text-align: left;
-    padding: 0 0.5rem;
-}
-
-.skill-item {
-    margin-bottom: 1rem;
-}
-
-.skill-item .progress {
-    height: 8px;
-    border-radius: 4px;
-    margin-top: 4px;
-}
-
-.skill-item .progress-bar {
-    border-radius: 4px;
-}
-
-.soft-skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.soft-skill-item {
-    text-align: center;
-    width: 150px;
-}
-
-.soft-skill-item i {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    background-color: rgba(102, 16, 242, 0.1);
-    margin-bottom: 1rem;
-}
-
-.soft-skill-item p {
-    font-weight: 500;
-}
-
-.skill-meter {
-    margin-top: 1rem;
-}
-
-/* Projects Page Styling */
-.projects-section {
-    background-color: #f9f7ff;
-}
-
-.project-card {
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-image {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-}
-
-.project-image img {
+/* Projects Page New Styling */
+.projects-showcase {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    padding: 0;
+    margin: 0;
 }
 
-.project-card:hover .project-image img {
-    transform: scale(1.1);
+.project-hero {
+    position: relative;
+    padding: 8rem 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
-.project-overlay {
+.project-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(102, 16, 242, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: all 0.3s ease;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
-.project-card:hover .project-overlay {
-    opacity: 1;
+.project-hero .container {
+    position: relative;
+    z-index: 2;
 }
 
-.overlay-content {
-    text-align: center;
+.project-details {
+    background-color: #ffffff;
 }
 
-.overlay-link {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 0 5px;
+.project-details h4 {
+    color: #333;
+}
+
+.project-details h5 {
     color: var(--bs-primary);
-    font-size: 20px;
-    transition: all 0.3s ease;
 }
 
-.overlay-link:hover {
-    background-color: var(--bs-primary);
-    color: #fff;
+.img-placeholder {
+    border: 2px dashed #ddd;
+}
+
+.project-links .btn {
+    font-weight: 600;
 }
 
 /* Enhanced Project Card Styling */
