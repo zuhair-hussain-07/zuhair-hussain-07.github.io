@@ -119,20 +119,20 @@ body {
 
 .project-hero {
     position: relative;
-    padding: 8rem 0;
+    min-height: 500px;
     background-size: cover;
     background-position: center;
-    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .project-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
 }
 
 .project-hero .container {
@@ -157,6 +157,8 @@ body {
 }
 
 .project-links .btn {
+    border-radius: 50px;
+    padding: 10px 20px;
     font-weight: 600;
 }
 
@@ -1033,6 +1035,95 @@ body {
     color: var(--bs-primary);
 }
 
+/* Project Page Enhancements */
+.project-hero {
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.project-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+}
+
+.project-links .btn {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.card-img-top img {
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+}
+
+.card-img-top img,
+.card-img-top .w-100 {
+    transition: all 0.5s ease;
+}
+
+.card:hover .card-img-top img,
+.card:hover .card-img-top .w-100 {
+    transform: scale(1.05);
+}
+
+.bg-dark.bg-opacity-75 {
+    transition: all 0.3s ease;
+}
+
+.card:hover .bg-dark.bg-opacity-75 {
+    background-color: rgba(var(--bs-primary-rgb), 0.85) !important;
+}
+
+.rounded-circle {
+    transition: all 0.3s ease;
+}
+
+.card:hover .rounded-circle {
+    transform: scale(1.1);
+}
+
+/* Video placeholder styles */
+.ratio-16x9 {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .project-hero {
+        min-height: 350px;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .education-year {
@@ -1074,4 +1165,8 @@ body {
         height: 150px;
         margin: 0 auto 15px;
     }
+}
+
+.card-img-top .position-absolute h5 {
+    color: white !important;
 }
