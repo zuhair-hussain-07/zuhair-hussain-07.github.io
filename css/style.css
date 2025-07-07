@@ -1,6 +1,9 @@
 :root {
     --bs-primary: #6610f2;
     --bs-primary-rgb: 102, 16, 242;
+    --primary-color: #6366f1;
+    --primary-dark: #4338ca;
+    --primary-light: #a5b4fc;
 }
 
 body {
@@ -1167,6 +1170,463 @@ body {
     }
 }
 
-.card-img-top .position-absolute h5 {
-    color: white !important;
+/* Projects Page Styles */
+.projects-page .hero-section {
+    background: #fff !important;
+    color: #111 !important;
+}
+
+.projects-page .hero-section h1 {
+    color: #111 !important;
+    font-size: 2.5rem !important;
+}
+
+.projects-page .hero-section p {
+    color: #6c757d !important;
+}
+
+.projects-page .project-card h2,
+.projects-page .feature-box h4,
+.projects-page .process-box h5,
+.projects-page .results-box h5 {
+    color: #6366f1 !important;
+}
+
+.projects-page .project-card .lead,
+.projects-page .project-card .badge,
+.projects-page .project-card a.text-primary,
+.projects-page .project-card .text-primary {
+    color: #6c757d !important;
+}
+
+.projects-page .project-card .badge,
+.projects-page .project-card .btn-outline-primary {
+    background-color: rgba(99, 102, 241, 0.1) !important;
+    border-color: #6366f1 !important;
+    color: #6366f1 !important;
+}
+
+.projects-page .project-card .btn-primary {
+    background-color: #6366f1 !important;
+    border-color: #6366f1 !important;
+    color: #fff !important;
+}
+
+.projects-page .project-image-container {
+    background: #111 !important;
+}
+
+/* Project image containers: fill for all except Pokémon Pocket */
+.projects-page .project-image-container.full-image {
+    background: none !important;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.projects-page .project-image-container.full-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+}
+
+/* Pokémon Pocket keeps black background */
+.projects-page .project-image-container.pokemon-bg {
+    background: #111 !important;
+    min-height: 400px;
+}
+
+.projects-page .project-image-container.pokemon-bg img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* Details Section: Work Process & Outcome uniform backgrounds */
+.projects-page .process-box {
+    background: rgba(99, 102, 241, 0.15) !important;
+}
+
+.projects-page .results-box {
+    background: rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Remove other color classes for details */
+.projects-page .feature-icon.bg-warning-subtle,
+.projects-page .feature-icon.bg-success-subtle,
+.projects-page .feature-icon.bg-danger-subtle,
+.projects-page .feature-icon.bg-info-subtle {
+    background: rgba(99, 102, 241, 0.15) !important;
+    color: #6366f1 !important;
+}
+
+.projects-page .results-box .fw-bold,
+.projects-page .results-box h5 {
+    color: #6366f1 !important;
+}
+
+.projects-page .hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-page .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="50" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="50" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.1;
+}
+
+.projects-page .project-card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.projects-page .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.projects-page .feature-showcase {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.projects-page .feature-showcase:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+}
+
+.projects-page .btn-primary {
+    color: #fff !important;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.projects-page .btn-primary:hover {
+    color: #fff !important;
+    background: var(--primary-dark) !important;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+.projects-page .btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.projects-page .btn-outline-primary:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.projects-page .bg-primary-subtle {
+    background-color: rgba(99, 102, 241, 0.1) !important;
+}
+
+.projects-page .text-primary {
+    color: var(--primary-color) !important;
+}
+
+.projects-page .badge.bg-primary-subtle {
+    background-color: rgba(99, 102, 241, 0.15) !important;
+}
+
+.projects-page .feature-icon {
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+}
+
+.projects-page .project-image-container img {
+    transition: all 0.3s ease;
+}
+
+.projects-page .project-image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Project Features titles all purple */
+.projects-page .feature-showcase h5.fw-bold {
+    color: #6366f1 !important;
+}
+
+
+
+/* Staggered animation for expanded content */
+.projects-page .project-details-section.show .feature-box,
+.projects-page .project-details-section.show .feature-showcase,
+.projects-page .project-details-section.show .process-box,
+.projects-page .project-details-section.show .results-box {
+    animation: slideInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.projects-page .project-details-section.show .feature-box:nth-child(1),
+.projects-page .project-details-section.show .process-box {
+    animation-delay: 0.1s;
+}
+
+.projects-page .project-details-section.show .feature-box:nth-child(2),
+.projects-page .project-details-section.show .results-box {
+    animation-delay: 0.2s;
+}
+
+.projects-page .project-details-section.show .feature-showcase:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.projects-page .project-details-section.show .feature-showcase:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.projects-page .project-details-section.show .feature-showcase:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.projects-page .project-details-section.show .feature-showcase:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Project card scale animation on expand */
+.projects-page .project-card.expanding {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.02);
+}
+
+/* Contact Page Enhanced Styles */
+.contact-page .hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    position: relative;
+    overflow: hidden;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-page .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="50" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="50" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.1;
+}
+
+.contact-page .contact-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.3);
+}
+
+.contact-page .contact-info-card,
+.contact-page .contact-form-card {
+    transition: all 0.3s ease;
+    border-radius: 20px !important;
+}
+
+.contact-page .contact-info-card:hover,
+.contact-page .contact-form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.contact-page .contact-item {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.contact-page .contact-item:hover {
+    transform: translateX(5px);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.contact-page .contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.contact-page .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-page .social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.contact-page .social-icon:hover {
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.contact-page .form-control {
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.contact-page .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.15);
+    transform: translateY(-2px);
+}
+
+.contact-page .form-floating > label {
+    padding: 1rem 1.5rem;
+    color: #6c757d;
+}
+
+.contact-page .btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-page .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.contact-page .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.contact-page .btn-primary:hover::before {
+    left: 100%;
+}
+
+.contact-page .quick-contact-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.contact-page .quick-contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.1) !important;
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.contact-page .icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.contact-page .quick-contact-card:hover .icon-circle {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contact-page .alert-success {
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-left: 5px solid #047857;
+}
+
+/* Enhanced animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-page .contact-item {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-page .contact-item:nth-child(1) { animation-delay: 0.1s; }
+.contact-page .contact-item:nth-child(2) { animation-delay: 0.2s; }
+.contact-page .contact-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .contact-page .hero-section {
+        min-height: 20vh;
+    }
+    
+    .contact-page .contact-info-card,
+    .contact-page .contact-form-card {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-page .social-icons {
+        justify-content: center;
+    }
 }

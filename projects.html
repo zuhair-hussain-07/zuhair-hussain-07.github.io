@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body>
+
+<body class="projects-page">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="index.html">ZH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,353 +34,551 @@
         </div>
     </nav>
 
-    <!-- Projects Section -->
-    <div class="projects-showcase">
-        <!-- Project: Initiate -->
-        <section id="initiate" class="project-hero" style="background-image: url('assets/initiate.png');">
-            <div class="project-hero-overlay"></div>
-            <div class="container text-white text-center" data-aos="fade-in">
-                <h2 class="display-4 fw-bold">Initiate</h2>
-                <p class="lead">A web-based platform that connects businesses with AI-powered tools and software solutions.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <span class="badge bg-light text-dark m-1">Next.js</span>
-                    <span class="badge bg-light text-dark m-1">Tailwind CSS</span>
-                    <span class="badge bg-light text-dark m-1">Prisma ORM</span>
-                    <span class="badge bg-light text-dark m-1">Stripe Connect</span>
-                    <span class="badge bg-light text-dark m-1">REST APIs</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://initiate.global" class="btn btn-light me-2">
-                        <i class="bi bi-eye me-1"></i> View Project
-                    </a>
-                    <a href="https://github.com/initiatex" class="btn btn-outline-light">
-                        <i class="bi bi-github me-1"></i> View Code
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="project-details py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-info-circle me-2"></i>Summary</h4>
-                            <p>Initiate is a web-based platform that connects businesses with AI-powered tools and software solutions. It helps users discover, compare, and adopt the right technologies for their needs — from chatbots and automation to analytics and beyond.</p>
-                        </div>
+    <!-- Hero Section -->
+    <section class="hero-section py-5 bg-white text-black position-relative">
+        <div class="container text-center position-relative z-1" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-3">My Projects</h1>
+            <p class="lead mb-0 text-muted">Showcasing innovative solutions built with cutting-edge technologies</p>
+        </div>
+    </section>
 
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-person-badge me-2"></i>My Role</h4>
-                            <p>Served as full stack developer and built:</p>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Community features with post threads, likes, and topic tagging</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Stripe-powered payment system with invoicing and seller payouts</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>An AI-driven Resource Hub that matches businesses with grants and support schemes</li>
-                            </ul>
-                        </div>
+    <!-- Projects Grid -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Project: Initiate -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="project-card bg-white rounded-4 shadow-lg overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-5">
+                                <div class="project-image-container full-image position-relative h-100">
+                                    <img src="assets/initiate.png" class="img-fluid rounded-3 shadow" alt="Initiate Project">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="p-5">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <h2 class="h1 fw-bold text-primary mb-0 me-3">Initiate</h2>
+                                        <span class="badge bg-primary-subtle text-primary px-3 py-2">Featured</span>
+                                    </div>
+                                    <p class="lead text-primary mb-4">A web-based platform that connects businesses with AI-powered tools and software solutions.</p>
+                                    
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-dark mb-2">Technologies Used</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary-subtle text-primary">Next.js</span>
+                                            <span class="badge bg-primary-subtle text-primary">Tailwind CSS</span>
+                                            <span class="badge bg-primary-subtle text-primary">Prisma ORM</span>
+                                            <span class="badge bg-primary-subtle text-primary">Stripe Connect</span>
+                                            <span class="badge bg-primary-subtle text-primary">REST APIs</span>
+                                        </div>
+                                    </div>
 
-                        <h4 class="fw-bold mb-4 text-center" data-aos="fade-up">Visuals</h4>
-                        <!-- Feature 1: Homepage -->
-                        <div class="row align-items-center mb-5 g-4">
-                            <div class="col-md-6" data-aos="fade-right">
-                                <h5 class="fw-bold">Homepage</h5>
-                                <p>The homepage showcases a curated list of AI solutions with filters by category, use case, and popularity. It’s designed to help users quickly discover tools that fit their business needs.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <img src="assets/marketplace.png" class="img-fluid rounded shadow-lg" alt="Initiate Homepage">
-                            </div>
-                        </div>
-                        <!-- Feature 2: Community Page -->
-                        <div class="row align-items-center mb-5 g-4 flex-md-row-reverse">
-                            <div class="col-md-6" data-aos="fade-left">
-                                <h5 class="fw-bold">Community Page</h5>
-                                <p>A built-in community hub where users can ask questions, share insights, and review AI tools. This feature encourages peer-to-peer support and crowdsourced feedback on solutions.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-right">
-                                <img src="assets/community (2).png" class="img-fluid rounded shadow-lg" alt="Initiate Community Page">
-                            </div>
-                        </div>
-                        <!-- Feature 3: Payment Invoicing -->
-                        <div class="row align-items-center mb-5 g-4">
-                            <div class="col-md-6" data-aos="fade-right">
-                                <h5 class="fw-bold">Payment & Invoicing</h5>
-                                <p>Secure and seamless checkout flow powered by Stripe Connect. Users can purchase tools, receive downloadable invoices, and sellers can manage payouts from their dashboard.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <img src="assets/order.png" class="img-fluid rounded shadow-lg" alt="Initiate Payment Invoicing">
-                            </div>
-                        </div>
-                        <!-- Feature 4: Resource Hub -->
-                        <div class="row align-items-center mb-5 g-4 flex-md-row-reverse">
-                            <div class="col-md-6" data-aos="fade-left">
-                                <h5 class="fw-bold">Resource Hub</h5>
-                                <p>An AI-assisted directory of grants, government programs, and business support schemes. Companies can discover relevant opportunities, and the AI engine recommends the most suitable ones based on their business profile and data stored in the platform.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-right">
-                                <img src="assets/resourcehub.png" class="img-fluid rounded shadow-lg" alt="Initiate Resource Hub">
-                            </div>
-                        </div>
+                                    <div class="d-flex gap-3 mb-4">
+                                        <a href="https://initiate.global" class="btn btn-primary px-4 py-2">
+                                            <i class="bi bi-eye me-2"></i>View Project
+                                        </a>
+                                        <a href="https://github.com/initiatex" class="btn btn-outline-primary px-4 py-2">
+                                            <i class="bi bi-github me-2"></i>View Code
+                                        </a>
+                                    </div>
 
-                        <!-- Work Process & Outcome -->
-                        <div class="row mt-5 pt-5 border-top">
-                            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up">
-                                <h5 class="fw-bold"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
-                                <p>The project began with researching how AI tools are currently discovered and bought online. After wireframing the platform experience, I built some of the core functionality — Stripe Connect onboarding, community features and resource hub.</p>
-                                <p>Collaboration features like community posts and comment threads were added later to increase engagement and peer reviews.</p>
+                                    <a href="#initiate-details" class="text-primary text-decoration-none fw-semibold view-details-link" data-bs-toggle="collapse">
+                                        <i class="bi bi-chevron-down me-1"></i>View Details
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                <h5 class="fw-bold"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
-                                <p>Initiate is now a registered company, officially partnering with IMDA (Singapore) and MDEC (Malaysia) as part of their SME digitalisation agendas. With over 50 AI startups lined up to onboard their products, the platform is entering its growth phase — focused on scaling partnerships, expanding feature sets, and bringing AI adoption to more businesses across the region.</p>
+                        </div>
+                        
+                        <!-- Initiate Details - Now inside the same card -->
+                        <div class="collapse project-details-section" id="initiate-details">
+                            <div class="project-details-content">
+                                <div class="p-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4" data-aos="fade-right">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-primary-subtle text-primary rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-info-circle fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">Summary</h4>
+                                                <p class="text-muted">Initiate is a web-based platform that connects businesses with AI-powered tools and software solutions. It helps users discover, compare, and adopt the right technologies for their needs — from chatbots and automation to analytics and beyond.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4" data-aos="fade-left">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-success-subtle text-success rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-person-badge fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">My Role</h4>
+                                                <p class="text-muted mb-2">Served as full stack developer and built:</p>
+                                                <ul class="list-unstyled text-muted">
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Community features with post threads, likes, and topic tagging</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Stripe-powered payment system with invoicing and seller payouts</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>An AI-driven Resource Hub that matches businesses with grants and support schemes</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="fw-bold text-center mb-5" data-aos="fade-up">Project Features</h4>
+                                    
+                                    <!-- Feature Gallery -->
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/marketplace.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Initiate Homepage">
+                                                <h5 class="fw-bold text-primary">Homepage</h5>
+                                                <p class="text-muted mb-0">The homepage showcases a curated list of AI solutions with filters by category, use case, and popularity. It's designed to help users quickly discover tools that fit their business needs.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/community (2).png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Initiate Community Page">
+                                                <h5 class="fw-bold text-primary">Community Page</h5>
+                                                <p class="text-muted mb-0">A built-in community hub where users can ask questions, share insights, and review AI tools. This feature encourages peer-to-peer support and crowdsourced feedback on solutions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/order.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Initiate Payment Invoicing">
+                                                <h5 class="fw-bold text-primary">Payment & Invoicing</h5>
+                                                <p class="text-muted mb-0">Secure and seamless checkout flow powered by Stripe Connect. Users can purchase tools, receive downloadable invoices, and sellers can manage payouts from their dashboard.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/resourcehub.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Initiate Resource Hub">
+                                                <h5 class="fw-bold text-primary">Resource Hub</h5>
+                                                <p class="text-muted mb-0">An AI-assisted directory of grants, government programs, and business support schemes. Companies can discover relevant opportunities, and the AI engine recommends the most suitable ones based on their business profile.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Process & Results -->
+                                    <div class="row">
+                                        <div class="col-lg-6" data-aos="fade-up">
+                                            <div class="process-box bg-primary-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-primary mb-3"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
+                                                <ul class="list-unstyled text-dark">
+                                                    <li class="mb-3">
+                                                        <strong>Problem Discovery:</strong>
+                                                        <ul class="mt-1 text-muted">
+                                                            <li>Businesses struggled to find the right AI solutions</li>
+                                                            <li>Startups lacked visibility and reach</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <strong>Empathy Interviews:</strong> 
+                                                        <span class="text-muted">Conducted with startups and businesses at Block 71 to gather real-world insights.</span>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <strong>Design & Prototyping:</strong> 
+                                                        <span class="text-muted">Created detailed Figma prototypes to map out core features.</span>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <strong>MVP Development:</strong>
+                                                        <ul class="mt-1 text-muted">
+                                                            <li>Split tasks among team members</li>
+                                                            <li><strong>My focus:</strong> Built the payment infrastructure (Stripe integration, invoicing, payouts)</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mb-0">
+                                                        <strong>Iterative Improvement:</strong> 
+                                                        <span class="text-muted">Launched core features, gathered user feedback, and refined the platform for better usability and engagement.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="results-box bg-success-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-success mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
+                                                <p class="text-dark mb-0">Initiate is now a registered company, officially partnering with IMDA (Singapore) and MDEC (Malaysia) as part of their SME digitalisation agendas. With over 50 AI startups lined up to onboard their products, the platform is entering its growth phase — focused on scaling partnerships, expanding feature sets, and bringing AI adoption to more businesses across the region.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Project 1: PolyGuru -->
-        <section id="polyguru" class="project-hero" style="background-image: url('assets/polyguru.png');">
-            <div class="project-hero-overlay"></div>
-            <div class="container text-white text-center" data-aos="fade-in">
-                <h2 class="display-4 fw-bold">PolyGuru</h2>
-                <p class="lead">AI-powered productivity tools for students.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <span class="badge bg-light text-dark m-1">Next.js</span>
-                    <span class="badge bg-light text-dark m-1">TailwindCSS (DaisyUI)</span>
-                    <span class="badge bg-light text-dark m-1">Prisma ORM</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://polyguru.xyz/" class="btn btn-light me-2">
-                        <i class="bi bi-eye me-1"></i> View Project
-                    </a>
-                    <a href="https://github.com/dentolos19/polyguru" class="btn btn-outline-light">
-                        <i class="bi bi-github me-1"></i> View Code
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="project-details py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-info-circle me-2"></i>Summary</h4>
-                            <p>Polyguru is a productivity platform designed to empower students through Generative AI tools. It offers features like test paper generation using Gemini AI, a comprehensive GPA calculator, and a collaborative Q&A feed to enhance learning efficiency.</p>
-                        </div>
+            <!-- Project: PolyGuru -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="project-card bg-white rounded-4 shadow-lg overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="p-5">
+                                    <h2 class="h1 fw-bold text-primary mb-3">PolyGuru</h2>
+                                    <p class="lead text-primary mb-4">AI-powered productivity tools for students.</p>
+                                    
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-dark mb-2">Technologies Used</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary-subtle text-primary">Next.js</span>
+                                            <span class="badge bg-primary-subtle text-primary">TailwindCSS (DaisyUI)</span>
+                                            <span class="badge bg-primary-subtle text-primary">Prisma ORM</span>
+                                        </div>
+                                    </div>
 
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-person-badge me-2"></i>My Role</h4>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Served as a full-stack developer, working alongside a teammate.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Designed and implemented the Test Paper Generation tool using Gemini AI.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Developed the GPA Calculator and the community Q&A feed.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Handled database access with Prisma ORM and integrated AI components.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Created a responsive UI with TailwindCSS and DaisyUI.</li>
-                            </ul>
-                        </div>
+                                    <div class="d-flex gap-3 mb-4">
+                                        <a href="https://polyguru.xyz/" class="btn btn-primary px-4 py-2">
+                                            <i class="bi bi-eye me-2"></i>View Project
+                                        </a>
+                                        <a href="https://github.com/dentolos19/polyguru" class="btn btn-outline-primary px-4 py-2">
+                                            <i class="bi bi-github me-2"></i>View Code
+                                        </a>
+                                    </div>
 
-                        <h4 class="fw-bold mb-4 text-center" data-aos="fade-up">Visuals</h4>
-                        <!-- Feature 1: Test Paper Generation -->
-                        <div class="row align-items-center mb-5 g-4">
-                            <div class="col-md-6" data-aos="fade-right">
-                                <h5 class="fw-bold">Test Paper Generation using Gemini AI</h5>
-                                <p>Developed an AI-powered tool that generates customized test papers for students based on their learning materials. Integrated with Google's Gemini AI for intelligent question creation and built a user-friendly interface for test customization.</p>
+                                    <a href="#polyguru-details" class="text-primary text-decoration-none fw-semibold view-details-link" data-bs-toggle="collapse">
+                                        <i class="bi bi-chevron-down me-1"></i>View Details
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <img src="assets/test2.png" class="img-fluid rounded shadow-lg" alt="Test Paper Generation">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="project-image-container full-image position-relative h-100">
+                                    <img src="assets/polyguru.png" class="img-fluid rounded-3 shadow" alt="PolyGuru Project">
+                                </div>
                             </div>
                         </div>
-                        <!-- Feature 2: GPA Calculator -->
-                        <div class="row align-items-center mb-5 g-4 flex-md-row-reverse">
-                            <div class="col-md-6" data-aos="fade-left">
-                                <h5 class="fw-bold">GPA Calculator</h5>
-                                <p>Developed an intuitive GPA calculator tailored for polytechnic students. The tool allows users to input their grades and credit units to calculate both semester and cumulative GPAs, with an option to save and track progress over time.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-right">
-                                <img src="assets/GPA1.png" class="img-fluid rounded shadow-lg" alt="GPA Calculator">
-                            </div>
-                        </div>
+                        
+                        <!-- PolyGuru Details - Now inside the same card -->
+                        <div class="collapse project-details-section" id="polyguru-details">
+                            <div class="project-details-content">
+                                <div class="p-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4" data-aos="fade-right">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-warning-subtle text-warning rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-info-circle fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">Summary</h4>
+                                                <p class="text-muted">Polyguru is a productivity platform designed to empower students through Generative AI tools. It offers features like test paper generation using Gemini AI, a comprehensive GPA calculator, and a collaborative Q&A feed to enhance learning efficiency.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4" data-aos="fade-left">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-success-subtle text-success rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-person-badge fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">My Role</h4>
+                                                <ul class="list-unstyled text-muted">
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Served as a full-stack developer, working alongside my friends.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Designed and implemented the Test Paper Generation tool using Gemini AI.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Developed the community Q&A feed.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Handled database access with Prisma ORM and integrated AI components.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Created a responsive UI with TailwindCSS and DaisyUI.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <!-- Work Process & Outcome -->
-                        <div class="row mt-5 pt-5 border-top">
-                            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up">
-                                <h5 class="fw-bold"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
-                                <p>PolyGuru was born out of a shared goal between my teammates and me to improve how students prepare for exams and track their academic progress. We identified a need for tools that could automate test creation and simplify GPA management.</p>
-                                <p>We worked together on the full-stack development, focusing on core features like AI-powered test paper generation and an intuitive GPA calculator, alongside a collaborative Q&A feed.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                <h5 class="fw-bold"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
-                                <p>PolyGuru is now a functional platform that empowers students to create custom test papers from their notes and accurately calculate their GPA. Initial feedback has been positive, with users highlighting the test generator's effectiveness for revision and the GPA calculator's convenience.</p>
+                                    <h4 class="fw-bold text-center mb-5" data-aos="fade-up">Project Features</h4>
+                                    
+                                    <!-- Feature Gallery -->
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/test2.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Test Paper Generation">
+                                                <h5 class="fw-bold text-warning">Test Paper Generation using Gemini AI</h5>
+                                                <p class="text-muted mb-0">Developed an AI-powered tool that generates customized test papers for students based on their learning materials. Integrated with Google's Gemini AI for intelligent question creation.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/GPA1.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="GPA Calculator">
+                                                <h5 class="fw-bold text-warning">GPA Calculator</h5>
+                                                <p class="text-muted mb-0">Developed an intuitive GPA calculator tailored for polytechnic students. The tool allows users to input their grades and credit units to calculate both semester and cumulative GPAs.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/community.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Q&A Feed">
+                                                <h5 class="fw-bold text-warning">Q&A Feed</h5>
+                                                <p class="text-muted mb-0">Created a collaborative Q&A feed where students can ask questions, share resources, and help each other with school-related topics.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Process & Results -->
+                                    <div class="row">
+                                        <div class="col-lg-6" data-aos="fade-up">
+                                            <div class="process-box bg-warning-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-warning mb-3"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
+                                                <ul class="list-unstyled text-dark">
+                                                    <li class="mb-3">
+                                                        <strong>Problem Discovery:</strong>
+                                                        <ul class="mt-1 text-muted">
+                                                            <li>My teammates and I realized that students lacked a one-stop solution for all school-related needs and a place to easily ask for help.</li>
+                                                            <li>We personally faced these challenges, which motivated us to build a platform that could address them.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mb-0">
+                                                        <strong>MVP Development:</strong>
+                                                        <ul class="mt-1 text-muted">
+                                                            <li>Collaborated with my teammate to develop the AI-powered test paper generation tool.</li>
+                                                            <li>Independently built the Q&A resource sharing feature to help students support each other.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="results-box bg-success-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-success mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
+                                                <p class="text-dark mb-0">PolyGuru is now a functional platform that empowers students to create custom test papers from their notes and accurately calculate their GPA. Initial feedback has been positive, with users highlighting the test generator's effectiveness for revision and the GPA calculator's convenience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Project 2: EcoPrimers -->
-        <section id="ecoprimers" class="project-hero" style="background-image: url('assets/ecoprimers.png');">
-            <div class="project-hero-overlay"></div>
-            <div class="container text-white text-center" data-aos="fade-in">
-                <h2 class="display-4 fw-bold">Eco Primers</h2>
-                <p class="lead">An interactive platform for promoting eco-friendly habits.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <span class="badge bg-light text-dark m-1">Flask</span>
-                    <span class="badge bg-light text-dark m-1">SQLite</span>
-                    <span class="badge bg-light text-dark m-1">JavaScript</span>
-                    <span class="badge bg-light text-dark m-1">Bootstrap</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://ecoprimers.fly.dev/" class="btn btn-light me-2">
-                        <i class="bi bi-eye me-1"></i> View Project
-                    </a>
-                    <a href="https://github.com/dentolos19/ecoprimers" class="btn btn-outline-light">
-                        <i class="bi bi-github me-1"></i> View Code
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="project-details py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-info-circle me-2"></i>Summary</h4>
-                            <p>Eco Primers is an interactive platform aimed at promoting eco-friendly habits through events, donations, and weather-based activity recommendations. It blends education and action to encourage sustainable living.</p>
-                        </div>
-
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-person-badge me-2"></i>My Role</h4>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Developed the home page and user authentication (including Google OAuth).</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Built the donation flow with Stripe and the complete event system.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Handled third-party API integrations and backend-to-frontend data flow.</li>
-                            </ul>
-                        </div>
-
-                        <h4 class="fw-bold mb-4 text-center" data-aos="fade-up">Visuals</h4>
-                        <!-- Feature 1: Event System -->
-                        <div class="row align-items-center mb-5 g-4">
-                            <div class="col-md-6" data-aos="fade-right">
-                                <h5 class="fw-bold">Event System</h5>
-                                <p>Developed a full-featured event system for users to join and for admins to manage. Built CRUD tools for event creation, editing, and tracking user participation. Integrated OpenWeather API to suggest eco-friendly activities based on current weather conditions.</p>
+            <!-- Project: Eco Primers -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="project-card bg-white rounded-4 shadow-lg overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-5">
+                                <div class="project-image-container full-image position-relative h-100">
+                                    <img src="assets/ecoprimers.png" class="img-fluid rounded-3 shadow" alt="Eco Primers Project">
+                                </div>
                             </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <img src="assets/event2.png" class="img-fluid rounded shadow-lg" alt="Event System">
+                            <div class="col-lg-7">
+                                <div class="p-5">
+                                    <h2 class="h1 fw-bold text-primary mb-3">Eco Primers</h2>
+                                    <p class="lead text-primary mb-4">An interactive platform for promoting eco-friendly habits.</p>
+                                    
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-dark mb-2">Technologies Used</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary-subtle text-primary">Flask</span>
+                                            <span class="badge bg-primary-subtle text-primary">SQLite</span>
+                                            <span class="badge bg-primary-subtle text-primary">JavaScript</span>
+                                            <span class="badge bg-primary-subtle text-primary">Bootstrap</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex gap-3 mb-4">
+                                        <a href="https://ecoprimers.fly.dev/" class="btn btn-primary px-4 py-2">
+                                            <i class="bi bi-eye me-2"></i>View Project
+                                        </a>
+                                        <a href="https://github.com/dentolos19/ecoprimers" class="btn btn-outline-primary px-4 py-2">
+                                            <i class="bi bi-github me-2"></i>View Code
+                                        </a>
+                                    </div>
+
+                                    <a href="#ecoprimers-details" class="text-primary text-decoration-none fw-semibold view-details-link" data-bs-toggle="collapse">
+                                        <i class="bi bi-chevron-down me-1"></i>View Details
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- Feature 2: Donation Flow -->
-                        <div class="row align-items-center mb-5 g-4 flex-md-row-reverse">
-                            <div class="col-md-6" data-aos="fade-left">
-                                <h5 class="fw-bold">Donation Flow</h5>
-                                <p>Implemented a secure donation system using Stripe, allowing users to contribute to eco causes. Designed a simple and trustworthy donation interface with clear impact messaging and multiple payment options.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-right">
-                                <img src="assets/donate1.png" class="img-fluid rounded shadow-lg" alt="Donation Flow">
-                            </div>
-                        </div>
+                        
+                        <!-- Eco Primers Details - Now inside the same card -->
+                        <div class="collapse project-details-section" id="ecoprimers-details">
+                            <div class="project-details-content">
+                                <div class="p-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4" data-aos="fade-right">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-success-subtle text-success rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-info-circle fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">Summary</h4>
+                                                <p class="text-muted">Eco Primers is an interactive platform aimed at promoting eco-friendly habits through events, donations, and weather-based activity recommendations. It blends education and action to encourage sustainable living.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4" data-aos="fade-left">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-info-subtle text-info rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-person-badge fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">My Role</h4>
+                                                <ul class="list-unstyled text-muted">
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Developed the home page and user authentication (including Google OAuth).</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Built the donation flow with Stripe and the complete event system.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Handled third-party API integrations and backend-to-frontend data flow.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <!-- Work Process & Outcome -->
-                        <div class="row mt-5 pt-5 border-top">
-                            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up">
-                                <h5 class="fw-bold"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
-                                <p>Eco Primers was developed by a team to promote sustainable habits through a user-friendly web platform. We started by identifying key features that could drive eco-action, such as event participation, donations, and weather-based suggestions.</p>
-                                <p>I contributed to building the event system (for users and admins), donation flow, and authentication, including Google OAuth. The project followed a modular approach, allowing us to integrate features efficiently as a team.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                <h5 class="fw-bold"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
-                                <p>Eco Primers enables users to discover eco-events, donate to green causes, and receive personalized sustainability tips based on live weather. Highlights include a smooth event and donation workflow and real-time weather-based activity suggestions.</p>
+                                    <h4 class="fw-bold text-center mb-5" data-aos="fade-up">Project Features</h4>
+                                    
+                                    <!-- Feature Gallery -->
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/event2.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Event System">
+                                                <h5 class="fw-bold text-success">Event System</h5>
+                                                <p class="text-muted mb-0">Developed a full-featured event system for users to join and for admins to manage. Built CRUD tools for event creation, editing, and tracking user participation. Integrated OpenWeather API to suggest eco-friendly activities based on current weather conditions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/donate1.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Donation Flow">
+                                                <h5 class="fw-bold text-success">Donation Flow</h5>
+                                                <p class="text-muted mb-0">Implemented a secure donation system using Stripe, allowing users to contribute to eco causes. Designed a simple and trustworthy donation interface with clear impact messaging and multiple payment options.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Process & Results -->
+                                    <div class="row">
+                                        <div class="col-lg-6" data-aos="fade-up">
+                                            <div class="process-box bg-success-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-success mb-3"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
+                                                <ul class="list-unstyled text-dark">
+                                                    <li class="mb-3">
+                                                        <strong>Problem Discovery:</strong>
+                                                        <span class="text-muted">Identified the need for an engaging platform to promote environmental awareness and action.</span>
+                                                    </li>
+                                                    <li class="mb-0">
+                                                        <strong>Design & Prototyping:</strong> 
+                                                        <span class="text-muted">Created a Figma prototype to plan out the user experience and main features.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="results-box bg-info-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-info mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
+                                                <p class="text-dark mb-0">Eco Primers enables users to discover eco-events, donate to green causes, and receive personalized sustainability tips based on live weather. Highlights include a smooth event and donation workflow and real-time weather-based activity suggestions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Project 3: Pokemon Pocket -->
-        <section id="pokemon-pocket" class="project-hero" style="background-image: url('assets/pokelogo.jpg');">
-            <div class="project-hero-overlay" style="background-color: rgba(0,0,0,0.4);"></div>
-            <div class="container text-white text-center" data-aos="fade-in">
-                <h2 class="display-4 fw-bold">Pokémon Pocket</h2>
-                <p class="lead">A console-based fan game with battles, card collecting, and trading.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <span class="badge bg-light text-dark m-1">C#</span>
-                    <span class="badge bg-light text-dark m-1">Spectre.Console</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn btn-light me-2">
-                        <i class="bi bi-eye me-1"></i> View Project
-                    </a>
-                    <a href="#" class="btn btn-outline-light">
-                        <i class="bi bi-github me-1"></i> View Code
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="project-details py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-info-circle me-2"></i>Summary</h4>
-                            <p>Pokémon Pocket is a console-based fan game that recreates Pokémon battles, card pack collecting, and trading in a fully interactive text UI. It delivers nostalgic gameplay through a modern terminal experience.</p>
-                        </div>
-
-                        <div class="mb-5" data-aos="fade-up">
-                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-person-badge me-2"></i>My Role</h4>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Designed and implemented all gameplay mechanics from scratch.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Developed the battle logic, card collection, and trading systems.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Used Spectre.Console to create a visually appealing and interactive interface.</li>
-                            </ul>
-                        </div>
-
-                        <h4 class="fw-bold mb-4 text-center" data-aos="fade-up">Visuals</h4>
-                        <!-- Feature 1: Battle System -->
-                        <div class="row align-items-center mb-5 g-4">
-                            <div class="col-md-6" data-aos="fade-right">
-                                <h5 class="fw-bold">Battle System</h5>
-                                <p>Designed and coded the core battle mechanics, including move selection, health tracking, and win/loss logic. Added animations and color feedback for a more engaging CLI experience.</p>
+            <!-- Project: Pokémon Pocket -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="project-card bg-white rounded-4 shadow-lg overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="p-5">
+                                    <h2 class="h1 fw-bold text-primary mb-3">Pokémon Pocket</h2>
+                                    <p class="lead text-primary mb-4">A console-based fan game with battles, card collecting, and trading.</p>
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-dark mb-2">Technologies Used</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary-subtle text-primary">C#</span>
+                                            <span class="badge bg-primary-subtle text-primary">Spectre.Console</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-4">
+                                        <a href="#" class="btn btn-primary px-4 py-2">
+                                            <i class="bi bi-eye me-2"></i>View Project
+                                        </a>
+                                        <a href="#" class="btn btn-outline-primary px-4 py-2">
+                                            <i class="bi bi-github me-2"></i>View Code
+                                        </a>
+                                    </div>
+                                    <a href="#pokemon-details" class="text-primary text-decoration-none fw-semibold view-details-link" data-bs-toggle="collapse">
+                                        <i class="bi bi-chevron-down me-1"></i>View Details
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <img src="assets/battle.png" class="img-fluid rounded shadow-lg" alt="Battle System UI">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="project-image-container pokemon-bg position-relative h-100">
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="assets/pokelogo.jpg" class="img-fluid rounded-3 shadow" alt="Pokémon Pocket Project">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Feature 2: Card Pack Collecting -->
-                        <div class="row align-items-center mb-5 g-4 flex-md-row-reverse">
-                            <div class="col-md-6" data-aos="fade-left">
-                                <h5 class="fw-bold">Card Pack Collecting</h5>
-                                <p>Implemented a card pack opening system with randomization, collection tracking, and rarity levels. Created a visually engaging CLI animation for pack openings.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-right">
-                                <img src="assets/cardpack.png" class="img-fluid rounded shadow-lg" alt="Card Pack Opening">
-                            </div>
-                        </div>
+                        
+                        <!-- Pokémon Pocket Details - Now inside the same card -->
+                        <div class="collapse project-details-section" id="pokemon-details">
+                            <div class="project-details-content">
+                                <div class="p-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4" data-aos="fade-right">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-danger-subtle text-danger rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-info-circle fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">Summary</h4>
+                                                <p class="text-muted">Pokémon Pocket is a console-based fan game that recreates Pokémon battles, card pack collecting, and trading in a fully interactive text UI. It delivers nostalgic gameplay through a modern terminal experience.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4" data-aos="fade-left">
+                                            <div class="feature-box">
+                                                <div class="feature-icon bg-warning-subtle text-warning rounded-3 p-3 mb-3 d-inline-block">
+                                                    <i class="bi bi-person-badge fs-4"></i>
+                                                </div>
+                                                <h4 class="fw-bold mb-3">My Role</h4>
+                                                <ul class="list-unstyled text-muted">
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Designed and implemented all gameplay mechanics from scratch.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Developed the battle logic, card collection, and trading systems.</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Used Spectre.Console to create an engaging terminal UI experience.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <!-- Work Process & Outcome -->
-                        <div class="row mt-5 pt-5 border-top">
-                            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up">
-                                <h5 class="fw-bold"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
-                                <p>Pokémon Pocket was a solo project inspired by classic games. I designed and implemented all core mechanics in C#, using Spectre.Console to build an interactive and visually styled console interface. The game features catching, battling, card collection, and trading—all within a smooth terminal experience.</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                <h5 class="fw-bold"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
-                                <p>Completed a fully functional prototype with key gameplay systems. The project highlights my skills in C# and CLI game design. In the future, I plan to integrate it as a Discord mini-game, allowing friends and peers to play directly through Discord for a more social experience.</p>
+                                    <h4 class="fw-bold text-center mb-5" data-aos="fade-up">Project Features</h4>
+                                    
+                                    <!-- Feature Gallery -->
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/battle.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Battle System UI">
+                                                <h5 class="fw-bold text-danger">Battle System</h5>
+                                                <p class="text-muted mb-0">Designed and coded the core battle mechanics, including move selection, health management, and turn-based combat with engaging console animations.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="feature-showcase bg-light rounded-3 p-4 h-100">
+                                                <img src="assets/cardpack.png" class="img-fluid rounded-3 mb-3 shadow-sm" alt="Card Pack Collecting">
+                                                <h5 class="fw-bold text-danger">Card Pack Collecting</h5>
+                                                <p class="text-muted mb-0">Implemented a card pack opening system with randomization, collection tracking, and rarity-based rewards to create an engaging collecting experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Process & Results -->
+                                    <div class="row">
+                                        <div class="col-lg-6" data-aos="fade-up">
+                                            <div class="process-box bg-danger-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-danger mb-3"><i class="bi bi-diagram-3 me-2"></i>Work Process</h5>
+                                                <p class="text-muted">Developed from concept to completion as a personal project to explore C# console applications and game development fundamentals.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="results-box bg-warning-subtle rounded-3 p-4 h-100">
+                                                <h5 class="fw-bold text-warning mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Outcome & Results</h5>
+                                                <p class="text-dark mb-0">Completed a fully functional prototype with key gameplay systems. The project demonstrates proficiency in C# programming, object-oriented design, and creating engaging user experiences in console applications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-        offset: 50
-      });
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
     </script>
 </body>
+
 </html>
