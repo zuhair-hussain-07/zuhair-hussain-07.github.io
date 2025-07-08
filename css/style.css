@@ -1199,11 +1199,16 @@ body {
     color: #6c757d !important;
 }
 
-.projects-page .project-card .badge,
-.projects-page .project-card .btn-outline-primary {
+.projects-page .project-card .badge {
     background-color: rgba(99, 102, 241, 0.1) !important;
     border-color: #6366f1 !important;
     color: #6366f1 !important;
+}
+
+.projects-page .project-card .btn-outline-primary {
+    border-color: #6366f1 !important;
+    color: #6366f1 !important;
+    background-color: transparent !important;
 }
 
 .projects-page .project-card .btn-primary {
@@ -1322,13 +1327,15 @@ body {
 .projects-page .btn-outline-primary {
     border-color: var(--primary-color);
     color: var(--primary-color);
+    background-color: transparent !important;
 }
 
 .projects-page .btn-outline-primary:hover {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-    color: #fff !important;
+    background: rgba(99, 102, 241, 0.1) !important;
+    border-color: var(--primary-dark);
+    color: var(--primary-dark) !important;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
 }
 
 .projects-page .bg-primary-subtle {
